@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <title>Starbucks Website Landing Page Demo</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo" alt="Starbucks Logo"></a>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" target="_blank">Menu</a></li>
+                <li><a href="#" target="_blank">What's New</a></li>
+                <li><a href="https://sksocialmediahandles.netlify.app/" target="_blank">Contact Us</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2 class="heading2">It's not just Coffee <br> It's <span>Starbucks</span></h2>
+                <p class="para1">Starbucks was founded in 1971 by Jerry Baldwin, Zev Siegl, and Gordon Bowker at
+                    Seattle's Pike Place Market. During the early 1980s, they sold the company to Howard Schultz
+                    who—after a business trip to Milan, Italy—decided to convert the coffee bean store into a coffee
+                    shop serving espresso-based drinks. </p>
+                <a href="https://sk-temp-convertio.netlify.app/" target="_blank">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" class="smallgreen" onclick="imgSlider('img1.png');changeCircleColor('#017143')">
+            </li>
+            <li><img src="thumb2.png" class="smallpink" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')">
+            </li>
+            <li><img src="thumb3.png" class="smallpurple" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')">
+            </li>
+            <li><img src="click here.png" class="click">
+            </li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#" class="face"><img src="facebook.png"></a></li>
+            <li><a href="https://youtube.com/channel/UCGK6AzG9mJWO3JK63wce0-g" class="youtube" target="_blank"><img
+                        src="youtube logo.png"></a></li>
+            <li><a href="https://www.instagram.com/sk_sdpy/" class="insta" target="_blank"><img src="instagram.png"></a>
+            </li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
